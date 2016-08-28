@@ -1,9 +1,9 @@
 DIR_NAME ?= $(notdir $(shell pwd))
 
-DOCKER_REGISTRY ?= registry.honestbee.com/
+DOCKER_REGISTRY ?= docker.io/
 SHORT_NAME ?= ${DIR_NAME}
 BUILD_TAG ?= git-$(shell git rev-parse --short HEAD)
-IMAGE_PREFIX ?= honestbee
+IMAGE_PREFIX ?= so0k
 
 include versioning.mk
 
